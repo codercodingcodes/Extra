@@ -6,85 +6,29 @@ html{
     border-image: url(color.gif) 1 round;
     height: auto; 
 }
-
-
-.Cr{
-    background-image: url(KYLO.jpg);
-}
-.para {
-    margin: auto;
-    margin-bottom: 2000px;
-color : orange;
-font-size: 500%;
-width: 1000px;
- border: 10px solid transparent;
-    padding: 15px;
-    border-color: black;
-    text-align: center;
-}
-.bb {
-    margin:auto;
-    box-sizing: border-box;
-    width: 200px;
-    border: 10px solid;
-    padding: 10px;
-    border-image: url(giphy.gif) 2 round;
-    text-align: center;
-}
- 
-.cd {
-    box-sizing: border-box;
-    margin: auto;
-    width: 200px;
-    border: 10px solid transparent;
-    padding: 10px;
-    border-image: url(giphy.gif) 2 round;
-    text-align: center;
-}
-
-.NICE {
-  text-align: center;
-    
-}
-
-.bEn{
-    color: white;
-}
-
-.ordered{
-    color:aliceblue;
-}
-
-div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  bottom:0;
-  padding: 5px;
-  background-color: #cae8ca;
-  border: 2px solid #4CAF50;
-}
 ul.first{
     list-style-type: none;
-    margin:0px;
+    margin:0;
     padding: 0;
-    overflow: hidden;
     background-color:deepskyblue;
     position:sticky;
     top:0;
+    z-index: 1;
 }
 
 li.first{
     float:left;
+    position: sticky;
 }
 li.first a {
     display: block;
     color: cyan;
     text-align: center;
-    padding: 14px 30px;
+    padding: 14px 50.5px;
     text-decoration: none;
+    background-color: deepskyblue;
 }
-li.first a:hover:not(.active){
+li.first a:hover{
     background-color: blue;    
 }
 .here{
@@ -122,7 +66,9 @@ h4{
     color:black;
 }
 .dropdown {
-    float: right;
+    float: left;
+    overflow: hidden;
+    background-color: deepskyblue;
 }
 
 .dropdown .dropbtn {
@@ -130,10 +76,11 @@ h4{
     border: none;
     outline: none;
     color: cyan;
-    padding: 14px 30px;
+    padding: 14px 50.5px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    position: sticky;
 }
 
  .dropdown:hover .dropbtn {
@@ -141,15 +88,17 @@ h4{
 }
 
 .dropdown-content {
+    margin: 0;
     display: none;
     position: absolute;
     background-color: #0066cc;
-    min-width: 160px;
+    min-width: 160spx;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
+    margin: 0;
     float: none;
     color: cyan;
     padding: 12px 16px;
@@ -158,6 +107,7 @@ h4{
     text-align: left;
     border: 1px solid;
     border-color: blue ;
+    z-index: 1;
 }
 
 .dropdown-content a:hover {
